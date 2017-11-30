@@ -1,0 +1,12 @@
+.navbar-black{
+    background-color: #2f2f2f;
+}
+
+.invisivel{
+    display: none;
+}
+
+.fadeOut {
+	opacity: 0;
+	transition: 0.5s;
+}

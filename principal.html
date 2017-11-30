@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Open Log - Tarefa</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.min.css" rel="stylesheet" />
+    <link href="assets/css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet" />
+    <link href="assets/css/principal.css" rel="stylesheet" />
+    <link href="assets/css/demo.css" rel="stylesheet" />
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="sidebar" data-color="blue" data-image="assets/img/mapa-mundi.jpg">
+            <div class="sidebar-wrapper">
+                <div class="logo">
+                    <a href="http://www.openlog.com.br/" class="simple-text">
+                    Open Log
+                </a>
+                </div>
+
+                <ul class="nav">
+                    <li class="active">
+                        <a href="principal.html">
+                        <i class="pe-7s-graph"></i>
+                        <p>Dashboard</p>
+                    </a>
+                    </li>
+                    <li>
+                        <a href="produtos.html">
+                        <i class="pe-7s-note2"></i>
+                        <p>Cadastre um Produto</p>
+                    </a>
+                    </li>
+                    <li class="active-pro">
+                        <a href="saiba-mais.html">
+                        <i class="pe-7s-angle-right"></i>
+                        <p>Saiba Mais</p>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-panel">
+            <nav class="navbar navbar-default navbar-fixed">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                        <a class="navbar-brand" href="#">OpenLog TasK</a>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="login.html">
+                                    <p>Sair</p>
+                                </a>
+                            </li>
+                            <li class="separator hidden-lg"></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+
+                                <div class="header">
+                                    <h4 class="title">Estatistica de Produtos</h4>
+                                    <p class="category">Gráfico exemplo de Produtos comprados.</p>
+                                </div>
+                                <div class="content">
+                                    <div id="chartPreferences" class="ct-chart ct-perfect-fourth"></div>
+
+                                    <div class="footer">
+                                        <div class="legend">
+                                            <i class="fa fa-circle text-info"></i> Produto A
+                                            <i class="fa fa-circle text-danger"></i> Produto B
+                                            <i class="fa fa-circle text-warning"></i> Produto C
+                                        </div>
+                                        <hr>
+                                        <div class="stats">
+                                            <i class="fa fa-clock-o"></i> Fechado há 2 dias.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-8">
+                            <div class="card">
+                                <div class="header">
+                                    <h4 class="title">Volume de acesso</h4>
+                                    <p class="category">Exemplo volume de acesso dos clientes nas ultimas 24 horas.</p>
+                                </div>
+                                <div class="content">
+                                    <div id="chartHours" class="ct-chart"></div>
+                                    <div class="footer">
+                                        <div class="legend">
+                                            <i class="fa fa-circle text-info"></i> Visitou página home
+                                            <i class="fa fa-circle text-danger"></i> Visitou página produtos
+                                            <i class="fa fa-circle text-warning"></i> Visitou página serviços
+                                        </div>
+                                        <hr>
+                                        <div class="stats">
+                                            <i class="fa fa-history"></i> Atualizado há 10 minutos atrás.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card ">
+                                <div class="header">
+                                    <h4 class="title">Vendas no Ano</h4>
+                                    <p class="category">Exemplo de vendas no ano</p>
+                                </div>
+                                <div class="content">
+                                    <div id="chartActivity" class="ct-chart"></div>
+
+                                    <div class="footer">
+                                        <div class="legend">
+                                            <i class="fa fa-circle text-info"></i> Produto A
+                                            <i class="fa fa-circle text-danger"></i> Produto B
+                                        </div>
+                                        <hr>
+                                        <div class="stats">
+                                            <i class="fa fa-check"></i> Informações atualizadas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card ">
+                                <div class="header">
+                                    <h4 class="title">Quadro de Tarefas</h4>
+                                    <p class="category">Exemplo de um quadro de tarefas a serem realizadas no dia.</p>
+                                </div>
+                                <div class="content">
+                                    <div class="table-full-width">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="checkbox">
+                                                            <input id="checkbox1" type="checkbox">
+                                                            <label for="checkbox1"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td>Revisar preço dos produtos: A, B e C.</td>
+                                                    <td class="td-actions text-right">
+                                                        <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+                                                        <i class="fa fa-edit"></i>
+                                                    </button>
+                                                        <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                                                        <i class="fa fa-times"></i>
+                                                    </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="checkbox">
+                                                            <input id="checkbox2" type="checkbox" checked>
+                                                            <label for="checkbox2"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td>Cadastrar os novos produtos que chegaram.</td>
+                                                    <td class="td-actions text-right">
+                                                        <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+                                                        <i class="fa fa-edit"></i>
+                                                    </button>
+                                                        <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                                                        <i class="fa fa-times"></i>
+                                                    </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="checkbox">
+                                                            <input id="checkbox3" type="checkbox">
+                                                            <label for="checkbox3"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td>E-mail de atualização para os clientes.
+                                                    </td>
+                                                    <td class="td-actions text-right">
+                                                        <button type="button" rel="tooltip" title="Edit Task" class="btn btn-info btn-simple btn-xs">
+                                                        <i class="fa fa-edit"></i>
+                                                    </button>
+                                                        <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                                                        <i class="fa fa-times"></i>
+                                                    </button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="footer">
+                                        <hr>
+                                        <div class="stats">
+                                            <i class="fa fa-history"></i> Atualizado há 3 horas atrás por admin-do-backend.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <nav class="pull-left">
+                        <ul>
+                            <li>
+                                <a href="https://www.linkedin.com/in/rodrigo-pereira-87380514a/">
+                                Meu Linkedin
+                            </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/rpereira12">
+                                Meu Github
+                            </a>
+                            </li>
+                            <li>
+                                <a href="https://cursos.alura.com.br/user/rodrigo-g-pereira/fullCertificate/4f6e1630684d1acbf21b46c8a1ff470f">
+                                Meus Certificados
+                            </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <p class="copyright pull-right">
+                        &copy;
+                        <script>
+                            document.write(new Date().getFullYear())
+
+                        </script> Rodrigo Pereira, desenvolvido para Roberto Alves para avaliação.
+                    </p>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+</body>
+
+<script src="assets/js/jquery.3.2.1.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/chartist.min.js"></script>
+<script src="assets/js/bootstrap-notify.js"></script>
+<script src="assets/js/light-bootstrap-dashboard.js?v=1.4.0"></script>
+<script src="assets/js/demo.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        demo.initChartist();
+
+        $.notify({
+            icon: 'pe-7s-gift',
+            message: "Essa é uma tarefa desenvolvida para a empresa <b>Open Log</b> desenvolvida por Rodrigo Pereira. Algumas funcionalidades da páginas podem ser apenas ilustrativas."
+
+        }, {
+            type: 'info',
+            timer: 4000
+        });
+
+    });
+
+</script>
+
+</html>
